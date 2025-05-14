@@ -1,0 +1,4 @@
+# Additional dependencies specific to this example
+click
+openai
+mcp-agent
