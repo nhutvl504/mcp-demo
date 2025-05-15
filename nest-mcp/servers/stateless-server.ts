@@ -11,6 +11,17 @@ import { GreetingTool } from '../resources/greeting.tool';
       name: 'playground-mcp-server',
       version: '0.0.1',
       transport: McpTransportType.STREAMABLE_HTTP,
+      capabilities: {
+        tools: {
+          listChanged: true,
+        },
+        resources: {
+          listChanged: true,
+        },
+        prompts: {
+          listChanged: true,
+        },
+      },
       streamableHttp: {
         enableJsonResponse: true,
         sessionIdGenerator: undefined,

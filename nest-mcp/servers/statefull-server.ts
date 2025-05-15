@@ -16,6 +16,17 @@ import { GreetingTool } from '../resources/greeting.tool.ts';
         sessionIdGenerator: () => randomUUID(),
         statelessMode: false,
       },
+      capabilities: {
+        tools: {
+          listChanged: true,
+        },
+        resources: {
+          listChanged: true,
+        },
+        prompts: {
+          listChanged: true,
+        },
+      },
     }),
   ],
   providers: [GreetingResource, GreetingTool, GreetingPrompt],
